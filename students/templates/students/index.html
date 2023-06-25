@@ -58,14 +58,13 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Спеціалість</th>
                                 <th scope="col">Середній бал</th>
-                                <th scope="col">Середній бал</th>
                                 <th scope="col">Action</th>
                               </tr>
                             </thead>
                             <tbody>
                               {% for student in students %}
                                 <tr>
-                                  <td>{{ student.student_number }}</td>
+                                  <td>{{ student.students_number }}</td>
                                   <td>{{ student.first_name }}</td>
                                   <td>{{ student.last_name }}</td>
                                   <td>{{ student.email }}</td>
