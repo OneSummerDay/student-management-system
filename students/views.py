@@ -39,3 +39,8 @@ def add(request):
                 'form': StudentForm(),
                 'success': True
             })
+    else:
+        form = StudentForm()
+    return render(request, 'students/add.html', {
+        'form': StudentForm()
+    })
