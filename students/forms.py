@@ -22,11 +22,11 @@ class StudentForm(forms.ModelForm):
             'gpa': 'GPA',
         }
         widgets = {
-            'students_number': forms.NumberInput(attrs=('class': 'form-control')),
-            'first_name': forms.TextInput(attrs=('class': 'form-control')),
-            'last_name': forms.TextInput(attrs=('class': 'form-control')),
-            'email': forms.EmailInput(attrs=('class': 'form-control')),
-            'fields_of_study': forms.TextInput(attrs=('class': 'form-control')),
-            'gpa': forms.NumberInput(attrs=('class': 'form-control')),
+            'students_number': forms.NumberInput(attrs={'class': 'form-control'}),
+            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'fields_of_study': forms.TextInput(attrs={'class': 'form-control'}),
+            'gpa': forms.NumberInput(attrs={'class': 'form-control'}),
         }
 
