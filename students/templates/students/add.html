@@ -2,7 +2,7 @@
 
 {% block body %}
   <h3 class="text-center m-4">Додати учня</h3>
-  {% is success %}
+  {% if success %}
     <div class="alert alert-success" role="alert">
         Учня додано успішно
         <a href="{% url 'index' %}" class="alert-link">Повернутись на головну</a>

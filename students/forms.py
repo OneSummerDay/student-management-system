@@ -14,12 +14,12 @@ class StudentForm(forms.ModelForm):
             'gpa',
         ]
         labels = {
-            'students_number': 'Student Number',
-            'first_name': 'First Name',
-            'last_name': 'Last Name',
+            'students_number': 'Номер учня',
+            'first_name': 'Ім\'я',
+            'last_name': 'Прізвище',
             'email': 'Email',
-            'fields_of_study': 'Fields of study',
-            'gpa': 'GPA',
+            'fields_of_study': 'Спеціальність',
+            'gpa': 'Середній бал',
         }
         widgets = {
             'students_number': forms.NumberInput(attrs={'class': 'form-control'}),
